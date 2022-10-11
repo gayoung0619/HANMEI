@@ -1,0 +1,226 @@
+@charset "utf-8";
+h3{
+    font-size: 30px;
+    line-height: 30px;
+}
+.join_wrap{
+    position: absolute;
+    padding: 36px 16px 0 16px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 96px);
+}
+.step1{
+    z-index: 1000;
+}
+.step2{
+    z-index: 900;
+}
+.step3{
+    z-index: 800;
+}
+.step3{
+    z-index: 800;
+}
+.progress_bar{
+    font-family: Noto Sans;
+    position: relative;
+    position: absolute;
+    z-index: 1001;
+    top: 87px;
+    right: 25px;
+    font-size: 14px;
+    color: #033572;
+    width: 40px;
+    height: 40px;
+}
+.progress_bar::before{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(#033572 0% 33%, #EAEAEA 24% 100%);
+}
+.progress_bar::after{
+    content:"";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.progress_bar span{
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    left: 10px;
+    line-height: 39px;
+}
+.join_wrap p{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+.form_wrap .select{
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
+
+
+/* step2 */
+.step2 .progress_bar::before {
+    background: conic-gradient(#033572 0% 66%, #EAEAEA 67% 100%);
+}
+
+/* step3 */
+.step3 .progress_bar::before{
+    background: #033572;
+}
+
+.progress_bar.on::before{
+    background: conic-gradient(#033572 0% 66%, #EAEAEA 67% 100%);
+}
+
+.progress_bar.active::before{
+    background: conic-gradient(#033572 100% 66%, #EAEAEA 100% 100%);
+}
+
+#joinPwVali{
+    display: none;
+}
+
+
+
+/* step4 */
+header{
+    background: transparent;
+}
+.step4::before,
+.welcome::before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -23px;
+    width: 276px;
+    height: 276px;
+    background-color: #004B45;
+    border-radius: 50%;
+}
+.step4::before{
+    z-index: -1;
+}
+.welcome::before{
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.step4{
+    z-index: 2;
+    padding-top: 96px;
+    margin-top: 0;
+}
+.step4 h3,
+.step4 > p,
+.welcome > h3,
+.welcome > p{
+    color: #ffffff;
+}
+.step4 > p{
+    margin:6px 0 20px 0;
+}
+.join_allow,
+.welcome_txt{
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 30px;
+    padding: 68px 0 68px 24px;
+}
+.welcome_txt{
+    padding: 30px 0 30px 24px;
+    margin-top: 48px;
+}
+.join_allow.on{
+    border-color: #004B45;
+}
+.join_allow.on .allow_all{
+    border-bottom-color: #004B45;
+}
+.join_allow .allow_all{
+    padding-bottom: 19px;
+    border-bottom: 0.8px solid #EAEAEA;
+    font-size: 16px;
+    line-height: 16px;
+}
+.join_allow ul{
+    padding-top: 36px;
+}
+.join_allow ul li{
+    position: relative;
+    line-height: 12px;
+}
+.welcome_txt ul li{
+    position: relative;
+    line-height: 12px;
+    padding-left: 20px;
+}
+.welcome_txt ul li::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/icon_check.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.join_allow ul li:nth-child(n+2),
+.welcome_txt ul li:nth-child(n+2){
+    margin-top: 14px;
+}
+input[type="checkbox"] + label::before,
+input[type="checkbox"]:checked + label::after{
+    content: "";
+    position: absolute;
+    background: url(../images/icon_check.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    top: -1px;
+    left: 0;
+}
+input[type="checkbox"]:checked + label::after {
+    background-image: url(../images/icon_checked.svg);
+}
+.join_allow ul li span{
+    position: absolute;
+    right: 24px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+.join_allow ul li span img{
+    width: 12px;
+}
+.welcome{
+    padding-top: 121px;
+    z-index: 1;
+}
+.welcome > h3,
+.welcome > p{
+    width: 200px;
+    margin: 0 auto;
+}
+.welcome > p{
+    margin-top: 6px;
+}
+.welcome_txt button{
+    background-color: #004B45;
+}
+

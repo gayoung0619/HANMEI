@@ -1,0 +1,454 @@
+@charset "UTF-8";
+.goback_area{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;  
+    padding: 0 16px;
+    background-color: #FFFFFF;
+}
+.goback_area .goback{
+    background-position: -52px 0;
+    width: 24px;
+    height: 24px;
+}
+.goback_area p{
+    font-size: 16px;
+    color: #292929;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+
+.mylocation strong{
+    font-size: 20px;
+    color: #373737;
+}
+.area_wrap strong{
+    font-size: 18px;
+    color: #373737;
+}
+.area_wrap > p,
+.mylocation > p{
+    margin-top: 8px;
+    color: #373737;
+    font-size: 13px;
+}
+.area_wrap > p:last-of-type,
+.mylocation > p:last-of-type{
+    margin-top: 2px;
+    color: #A3A3A3;
+    font-size: 13px;
+}
+.area_wrap > p span,
+.mylocation > p span{
+    line-height: 18px;
+    margin-top: 2px;
+    color: #A3A3A3;
+    border: 0.8px solid #E5E5E5;
+    display: inline-block;
+    padding: 0 9px;
+    margin-right: 6px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.feed_btn{
+    position: fixed;
+    bottom: 96px;
+    right: 16px;
+}
+.feed_btn button{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.feed_btn .write_btn{
+    background: url(../images/icon_write.png) no-repeat center / cover;
+}
+.feed_btn .top_btn{
+    background: url(../images/icon_top.png) no-repeat center / cover;
+    margin-top: 6px;
+}
+.feed_btn .walking_btn{
+    background: url(../images/btn_walk.png) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+
+
+
+
+
+
+/* 이용자 프로필 */
+.section1 .writer_info{
+    padding-bottom: 24px;
+}
+.section:not(:first-of-type){
+    padding: 24px 16px;
+}
+.section .writer{
+    vertical-align: middle;
+}
+.section .writer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.section .pic{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+    float: left;
+}
+.section .pic img{
+    width: 100%;
+    height: 100%;
+}
+.section .info{
+    display: inline-block;
+    height: 36px;
+    font-size: 10px;
+}
+.section .info p{
+    line-height: 14px;
+    margin-top: 3px;
+    color: #373737;
+}
+.section .info p span{
+    color: #9AC31C;
+}
+.section .horoscope{
+    float: right;
+    height: 36px;
+}
+.section .horoscope span{
+    font-size: 18px;
+    color: #9AC31C;
+    line-height: 36px;
+    vertical-align: middle;
+    
+}
+.section .horoscope .star{
+    display: inline-block;
+    background: url(../images/care_icon.png) no-repeat;
+    background-position: -22px 0;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.section .info .writer_mark{
+    background: #F5F5F5;
+    color: #9AC31C;
+    display: inline-block;
+    width: 39px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 8px;
+}
+.section .more{
+    float: right;
+    height: 36px;
+    color: #A3A3A3;
+    font-size: 10px;
+}
+.section .more .more_btn{
+    width: 16px;
+    height: 16px;
+    text-align: right;
+    padding-top: 2px;
+}
+.section .more .more_btn div{
+    width: 2px;
+    height: 2px;
+    background: #ACACAC;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+/* 라인 있는 writer_info2 */
+.writer_info2{
+    position: relative;
+    padding: 0 24px 24px 24px;
+    border-bottom:  0.8px solid      #E2E2E2;
+}
+.writer_cnt2 {
+    padding: 24px 24px 0 24px;
+}
+.writer_cnt2 .time, .writer_cnt2 .point{
+    color: #9AC31C;
+    font-size: 14px;
+}
+.writer_cnt2 p{
+    font-size: 10px;
+    line-height: 14px;
+    margin: 14px 0;
+}
+.writer_cnt2 .cnt_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.writer_cnt2 .care_type{
+    color: #9AC31C;
+    border: 0.8px solid #9AC31C;
+    border-radius: 5px;
+    width: 65px;
+    line-height: 22px;
+    text-align: center;
+}
+.writer_wrap .writer_info2{
+    padding-top: 24px;
+}
+.writer_wrap .writer_cnt2{
+    padding-bottom: 24px;
+}
+
+
+.select {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.select2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select2 .sprite{
+    display: inline-block;
+}
+.select .sprite, .select2 .sprite{
+    background-size: cover;
+    background-position: -83px 0;
+    width: 14px;
+    height: 14px;
+}
+.select .sprite, .select2 .sprite{
+    margin-left: 4px;
+}
+.select .sprite2{
+    background-position: 6px -33px;
+    transform: rotate(90deg);
+}
+.select.on .sprite2{
+    transform: rotate(270deg) !important;
+}
+
+
+#map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* img_area */
+.img_area{
+    margin: 14px 0;
+}
+.img172, .img84 {
+    border-radius: 10px;
+    margin-top: 8px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+img_area div:first-child .img84 img{
+    border-radius: 10px;
+    width: 100%;
+    height: 172px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.img84 img{
+    border-radius: 10px;
+    height: 84px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.img_area .img84:nth-of-type(n+2){
+    margin-top: 4px !important;
+}
+/*.img_area .nowrap,
+.img_area .nowrap{
+    display: flex;
+}
+.img_area .nowrap .img84{
+    width: 50%;
+    margin-top: 4px;
+}
+.img_area .nowrap .img84:nth-of-type(2),
+.img_area .nowrap .img84:nth-of-type(2){
+    margin-left: 4px;
+}
+.img_area .nowrap .img84:nth-of-type(2){
+    position: relative;
+}*/
+
+.img_three .img84:nth-child(n+2){
+    width: calc(50% - 2px);
+}
+.img_three .img84:nth-child(2){
+    float: left;
+    margin-left: 4px;
+}
+.img_three .img84:nth-child(2){
+    float: right;
+}
+
+.img_area .pic_more{
+    position: relative
+}
+
+.img_area .pic_more::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 84px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.img_area .pic_more .more_txt{
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    line-height: 84px;
+}
+
+.bd_close{
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    width: 24px;
+    height: 24px;
+}
+.bd_close::before, 
+.bd_close::after{
+    content:"";
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 1px;
+}
+.bd_close::before{
+    transform: rotate(45deg);
+}
+.bd_close::after{
+    transform: rotate(-45deg);
+}
+
+/* check전단계 */
+body div .choise_wrap:first-of-type{
+    margin-top: 14px;
+}
+.choise_wrap{
+    margin-top: 24px;
+    padding: 0 16px;
+}
+.choise_wrap dt{
+    color: #373737;
+}
+.choise_wrap dd{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    color: #A3A3A3;
+    line-height: 38px;
+}
+.choise_wrap dd p{
+    width: calc(100% - 111px);
+    border-bottom: 0.8px solid #E2E2E2;
+}
+.choise_wrap button{
+    background-color: #9AC31C;
+    color: #FFFFFF;
+}
+
+/* 입력된 상태 박스 */
+.complete_wrap{
+    padding: 0 16px;
+    margin-top: 24px;
+}
+.complete_wrap dl{
+    position: relative;
+}
+.complete_wrap dt{
+    color: #373737;
+}
+.complete_wrap dd{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 0.8px solid #E2E2E2;
+    margin-top: 14px;
+    padding-bottom: 8px;
+}
+.complete_wrap button{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+.made_wrap button {
+    bottom: -52px;
+}
+.complete_wrap dl:nth-of-type(n+2){
+    margin-top: 24px;
+}
+.complete_wrap dl:nth-of-type(2) dd{
+    display: flex;
+    align-items: center;
+}
+.complete_wrap .text_comp{
+    border: 0.8px solid #E2E2E2;
+    border-radius: 10px;
+    padding: 16px;
+    height: 200px;
+}
+
+
+
+

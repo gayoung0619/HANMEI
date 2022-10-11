@@ -1,0 +1,455 @@
+@charset "utf-8";
+/*body{*/
+/*    background-color: #F9F9F9;*/
+/*}*/
+.profile_top{
+    padding: 26px 16px;
+    background-color: #ffffff;
+    border-bottom: 12px solid #F5F5F5;
+    border-top: 1px solid #004B45;
+}
+.profile_wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.profile_wrap .profile{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.profile_wrap p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.profile_btn,
+.chat_with{
+    height: 60px;
+    border: 0.5px solid #EAEAEA;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 33px;
+    color: #959595;
+}
+
+.profile_btn2 ul{
+    height: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+.profile_btn2 ul li{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border: 0.5px solid #EAEAEA;
+    border-radius: 10px;
+    padding: 14px 0;
+    width: calc(100% / 3 - 12px);
+}
+.profile_btn2 ul li:nth-of-type(2){
+    margin: 0 14px;
+}
+.profile_btn2 ul li div span:first-of-type{
+    color: #A3A3A3;
+    line-height: 10px;
+    padding-right: 2px;
+}
+.profile_btn2 ul li:nth-of-type(2) div span:first-of-type{
+    padding-left: 3px;
+    padding-right: 0;
+}
+.profile_btn2 ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.profile_list{
+    margin-bottom: 106px;
+    background-color: #f5f5f5;
+}
+.profile_list > ul > li{
+    position: relative;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: #626262;
+    font-weight: 300;
+    line-height: 60px;
+    border-top: 1px solid #f5f5f5;
+}
+.profile_list > ul > li::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: url(../images/icon_next.png) no-repeat center / cover;
+    width: 14px;
+    height: 14px;
+}
+.profile_list ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 0 16px;
+}
+.profile_list .accordion p{
+    border-bottom: 1px solid #F5F5F5;
+}
+.profile_list .accordion > p{
+    display: inline-block;
+    width: 100%;
+    padding: 0 16px;
+}
+.profile_list .accordion::after{
+    top: 26px;
+    right: 16px;
+    transform: rotate(90deg);
+}
+.profile_list.on .accordion::after {
+    transform: rotate(270deg);
+}
+.profile_list .accordion ul{
+    visibility: hidden;
+    max-height: 0;
+    padding: 0 16px;
+}
+.profile_list .accordion li:first-of-type{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.profile_list .accordion li:first-of-type div{
+    line-height: 12px;
+}
+.profile_list .accordion li:first-of-type div span{
+    display: flex;
+    color: #959595;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 6px;
+}
+.profile_list .accordion li:first-of-type span + span{
+    color: #004B45;
+}
+.wrap{
+    padding: 0 16px;
+    margin-top: 36px;
+}
+.wrap > p{
+    font-size: 16px;
+    line-height: 16px;
+
+}
+.wrap .withdrawal_txt{
+    border: 0.8px solid #EAEAEA;
+    border-radius: 30px;
+    margin-top: 24px;
+    padding: 30px 24px;
+    font-size: 12px;
+    line-height: 12px;
+    transition: opacity 1.5s;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.wrap .withdrawal_txt.on{
+    opacity: 1;
+    visibility: visible;
+}
+.wrap .withdrawal_txt li{
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+.wrap .withdrawal_txt li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/icon_check.svg) no-repeat center / cover;
+    width: 16px;
+    height: 16px;
+}
+.wrap .withdrawal_txt p{
+    padding-left: 20px;
+    padding-top: 6px;
+    color: #004B45;
+    line-height: 16px;
+}
+
+/* 상점정보 */
+.shop_info{
+    padding: 26px 16px 0 16px;
+}
+.shop_info label{
+    color: #959595;
+}
+.shop_info input::placeholder{
+    color: #626262;
+    letter-spacing: -1px;
+}
+.btn{
+    background-color: #004B45;
+}
+.btn span{
+    margin-left: 4px;
+    font-size: 14px;
+}
+.quantity_wrap{
+    padding: 36px 16px;
+}
+.quantity_wrap h3,
+.tit_wrap h3{
+    font-size: 30px;
+    line-height: 30px;
+}
+.quantity_wrap p,
+.tit_wrap p{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+.quantity_wrap form label{
+    color: #959595;
+}
+.tit_wrap{
+    padding: 36px 16px;
+}
+.inquiry_list{
+    overflow-y: scroll;
+    background-color: #F9F9F9;
+}
+.inquiry_box a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #F9F9F9;
+    padding: 22px 16px;
+    font-weight: 300;
+    background-color: #fff;
+}
+.inquiry_box:last-child a{
+    border-bottom: 1px solid #F9F9F9;
+}
+.inquiry_txt h4{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 8px;
+    color: #626262;
+    font-weight: 300;
+}
+.inquiry_txt .date{
+    color: #959595;
+}
+.inquiry_box span,
+.writing_form .tit span,
+.enter_form .tit_wrap  span{
+    color: #959595;
+    line-height: 22px;
+    display: inline-block;
+    width: 59px;
+    height: 24px;
+    border-radius: 5px;
+    text-align: center;
+    border: 0.8px solid #E5E5E5;
+    font-size: 12px;
+}
+.enter_form{
+    margin-bottom: 86px;
+}
+.tit_wrap{
+    position: relative;
+}
+.enter_form .tit_wrap span{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.enter_form .list{
+    height: auto;
+}
+#office{
+    width: 75%;
+}
+.btn_address{
+    border: 0.8px solid #EAEAEA;
+    border-radius: 10px;
+    color: #959595;
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+#office_detail{
+    margin-top: 22px;
+}
+.form{
+    padding: 0 16px;
+}
+
+/* 공지사항 */
+.notice_wrap{
+    padding: 16px;
+}
+.notice_wrap .date{
+    color: #959595;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 24px;
+}
+.notice_cnt p{
+    margin-top: 8px;
+    color: #959595;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+/* 프로필 */
+.profile_cnt{
+    padding: 0 16px;
+}
+.pic_register{
+    width: 100px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+.pic_register > img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.pic_register form{
+    position: relative;
+}
+.pic_register .edit img{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+.pic_register .name,
+.pic_register p{
+    width: auto;
+    position: relative;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.pic_register .name::after{
+    content:"";
+    position: absolute;
+    right: 5px;
+    background: url(../images/icon_edit.svg);
+    width: 14px;
+    height: 14px;
+}
+
+
+.profile_cnt .form_wrap{
+    margin-top: 16px;
+}
+.profile_cnt .form_wrap:nth-of-type(2){
+    margin-top: 50px;
+}
+.profile_cnt .form_wrap dt{
+    color: #959595;
+}
+
+.agreement{
+    margin: 14px 0 46px 0;
+    color: #959595;
+    font-weight: 300;
+}
+.agreement h4{
+    margin-bottom: 8px;
+    line-height: 12px;
+}
+.agreement > p{
+    font-size: 10px;
+    color: #A3A3A3;
+    line-height: 10px;
+}
+.agreement .mail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #626262;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.agreement .mail .toggle_btn{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: #626262;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: right;
+}
+.agreement .mail .toggle_btn span{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.agreement .mail .toggle_btn.on{
+    background-color: #004B45;
+}
+.agreement .mail .toggle_btn.on span{
+    left: auto;
+    right: 1px;
+}
+
+.agreement .mail{
+    margin-top: 14px;
+}
+.agreement + button{
+    margin: 0 16px;
+    background-color: #373737;
+    color: #FFFFFF;
+    height: 50px;
+    width: calc(100% - 32px);
+    border-radius: 10px;
+    font-size: 14px;
+}
+.profile_cnt .wid100{
+    background-color: #004B45;
+}
+
+.verify_form .wid100{
+    background-color: #004B45;
+}

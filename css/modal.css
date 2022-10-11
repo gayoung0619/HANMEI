@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/* 모달창 */
+#dim,
+.md_cnt{
+  position: fixed;
+  z-index: 1005;
+}
+#dim{
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+.md_cnt{
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 28px;
+  visibility: hidden;
+  width: 343px;
+}
+.md_cnt.open{
+  visibility: visible;
+}
+#dim.open{
+  display: block;
+}
+/* 버튼 두개 */
+.md_two,
+.md_three{
+  background: none;
+  bottom:24px;
+  top: auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.md_two button,
+.md_three button{
+  margin: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 10px;
+}
+.md_two button:first-of-type{
+  margin-bottom: 4px;
+  color: #FF5555;
+}
+
+/* 버튼 세개 */
+.md_three button:first-of-type{
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 1px;
+  color: #EE3123;
+}
+.md_three button:nth-of-type(2){
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 4px;
+}
+
+/* 박스 모달창 */
+.md_box h3, .md_box h4{
+  font-size: 18px;
+  font-weight: 300;
+}
+.md_box h3 span{
+  color: #EE3123;
+}
+.md_box p{
+  margin-top: 12px;
+  color: #959595;
+  font-weight: 300;
+  line-height: 12px;
+}
+.md_box .btn_wrap{
+  margin-top: 24px;
+}
+.md_box button:not(.md_close_btn){
+  width: 100%;
+  border: 0.5px solid #EAEAEA;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 300;
+}
+.md_box button:first-of-type{
+  margin-bottom: 4px;
+  color: #EE3123;
+}
+.md_box .md_close_btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* 박스모달창2 */
+.md_box2{
+  background: #ffffff;
+  padding: 44px 0 40px 0;
+  text-align: center;
+  color: #959595;
+}
+.md_box2 h3{
+  color: #626262;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 14px 0 10px 0;
+}
+.md_box2 p{
+  font-size: 16px;
+  line-height: 16px;
+}
+.md_box2 p:first-of-type{
+  margin-bottom: 10px;
+}
+.md_box2 button{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 14px;
+  height: 14px;
+}
+
+
+.md_cnt#modalPic{
+  background: none !important;
+  width: 100%;
+  padding: 0 4px;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.md_cnt#modalPic button{
+  margin: 0 !important;
+  top: -10px;
+  right: 41px;
+}
+#modalPic button.close_btn{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -37px;
+  right: 18px;
+  border: none;
+  border-radius: 0;
+}
+#modalPic .swiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: 0;
+}
+.modal_slider{
+  width: 100%;
+}
+.modalpic{
+  text-align: center;
+}
+.modal_pic{
+  width: 100%;
+}
+.modal_pic img{
+  max-height: 550px;
+  height: auto;
+  text-align: center;
+  max-width: 448px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 4px;
+}
+.modal_pic .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: 30px;
+}
+
+/* 체크막스 모달창 */
+.md_check{
+  padding: 44px 0 0 0 !important;
+}
+.md_check h3{
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0 24px;
+}
+.md_check p{
+  color: #959595;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 16px 0 34px 0;
+  padding: 0 24px ;
+}
+.md_check .btn_wrap{
+  color: #fff;
+  text-align: center;
+  background-color: #033572;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+}
+.md_check button{
+  width: 100%;
+  height: 100%;
+}
+
+/* modalpolicy */
+.md_policy{
+  top: 10%;
+  height: 500px;
+  width: calc(100% - 32px);
+}
+.md_policy h4{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.md_policy .txt{
+  color: #959595;
+  height: 352px;
+  overflow-y: auto;
+  margin-bottom: 22px;
+}
+.md_policy .txt p:not(:first-of-type){
+  margin-top: 10px;
+}
+.md_policy button{
+  width: 100%;
+  border: 0.8px solid #EAEAEA;
+  height: 40px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+

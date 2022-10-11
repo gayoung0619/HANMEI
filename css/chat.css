@@ -1,0 +1,216 @@
+@charset "utf-8";
+header{
+    height: 60px !important;
+    border-bottom: 1px solid #F9F9F9;
+}
+.header_top h2{
+    transform: translateX(42%);
+}
+.header_top h2 svg{
+    line-height: 12px;
+    margin-left: 1px;
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+.alarm_txt p:first-of-type{
+    color: #004B45;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.alarm_txt p:nth-of-type(2){
+    font-size: 12px;
+}
+
+/* mypage_alarm과 동일한 레이아웃 */
+.time{
+    color: #A3A3A3;
+}
+.chat_wrap .pd_info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #F9F9F9;
+    padding: 20px 16px;
+}
+.chat_wrap .pd_img img{
+    width: 60px;
+    height: 60px;
+}
+.chat_wrap .pd_txt{
+    margin-left: 16px;
+    line-height: 1;
+}
+.chat_wrap .pd_txt b{
+    font-weight: 500;
+}
+.chat_wrap .pd_txt h3{
+    color: #959595;
+    font-weight: 300;
+    margin: 4px 0 8px 0;
+}
+.chat_wrap .pd_txt .price{
+    font-size: 14px;
+    font-weight: 500;
+}
+.chat_wrap .pd_txt .price strong{
+    display: inline-block;
+}
+.chat_wrap .pd_txt .price .percent{
+    color: #EE3123;
+    margin-right: 2px;
+}
+.chat_wrap .date{
+    height: 94px;
+    line-height: 94px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.chat_wrap .date p {
+    text-align: center;
+}
+.chatting_wrap{
+    padding: 0 16px 108px 16px;
+    font-weight: 300 ;
+}
+.chatting_wrap p{
+    word-break: break-all;
+}
+.chatting_wrap::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.chat_wrap .other_wrap{
+    display: inline-block;
+    margin-top: 14px;
+    float: left;
+}
+.chatting_wrap .pic_other{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+}
+.chatting_wrap .pic_other svg,
+.chatting_wrap .pic_me svg{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.chatting_wrap .message p{
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #F9F9F9;
+    height: 100%;
+    padding: 8px 16px;
+    max-width: calc(100% - 88px);
+}
+.chatting_wrap .time{
+    font-size: 10px;
+    vertical-align: bottom;
+}
+
+
+
+.other_wrap + .message,
+.my_wrap + .message_my{
+    max-width: calc(100% - 50px) !important;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.other_wrap + .message{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 14px;
+}
+.message{
+    display: flex;
+    align-items: flex-end;
+    margin: 8px 8px 0 44px;
+}
+.message .time{
+    margin-left: 8px;
+}
+
+.chatting_wrap .message_my{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: 8px 0 0 0;
+}
+.chatting_wrap .message_my p{
+    border-radius: 10px;
+    max-width: calc(100% - 88px);
+}
+.chatting_wrap .my_wrap{
+    margin-top: 14px;
+    float: right;
+}
+.chatting_wrap .pic_me{
+    margin-left: 8px;
+}
+.my_wrap + .message_my{
+    margin: 14px 0 0 0;
+}
+.my_wrap + .message_my p{
+    float: right;
+}
+.chatting_wrap .message_my p{
+    display: inline-block;
+    background-color: #004B45;
+    color: #FFFFFF;
+    height: 100%;
+    padding: 8px 16px;
+}
+.message img,
+.message_my img{
+    max-width: calc(100% - 88px);
+    height: auto;
+    border-radius: 20px;
+}
+.message_my img{
+    max-width: calc(100% - 138px);
+}
+
+.message_my .time{
+    margin-right: 8px;
+}
+.reply_wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 14px 16px;
+}
+.reply_wrap .btn_pic,
+.reply_wrap .send{
+    background-color: #FFFFFF;
+    height: 34px;
+    width: 34px;
+    border-radius: 10px;
+}
+.textarea_size{
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #A3A3A3;
+    border: none;
+    width: calc(100% - 90px);
+    height: 34px;
+    line-height: 34px;
+    margin: 0 8px;
+    padding: 0 10px;
+}

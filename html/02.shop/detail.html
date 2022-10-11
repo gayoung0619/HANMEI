@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <title>한미면세 - 상품상세</title>
+    <link rel="stylesheet" href="../../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/shop.css">
+
+
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<div class="header">
+    <button type="button" class="goback">
+        <svg width="18" height="18" viewBox ="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 9H1" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 17L1 9L9 1" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <button type="button" class="more_filter md_open_btn" aria-haspopup="dialog" title="대화상자" data-href="#Report">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+<div class="product_cnt">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide1">
+                <a href=""><img src="../../images/product_detail.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide slide2">
+                <a href=""><img src="../../images/product_detail.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide slide3">
+                <a href=""><img src="../../images/product_detail.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide slide4">
+                <a href=""><img src="../../images/product_detail.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide slide5">
+                <a href=""><img src="../../images/product_detail.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="product_info">
+        <b>Brand-name</b>
+        <div class="loves"></div>
+        <h3>item-name</h3>
+    </div>
+    <div class="breadcrumb">
+        <ul>
+            <li>스킨케어</li>
+            <li>기초케어</li>
+            <li>스킨 ·토너</li>
+        </ul>
+    </div>
+    <!--  로그인 후 login 클래스 추가-->
+    <div class="price">
+        <div>
+            <strong>정상가</strong>
+            <p>￦300,000</p>
+        </div>
+        <div>
+            <strong>회원 할인가</strong>
+            <!--<p>￦150,000</p>-->
+            <p>로그인후 확인가능</p>
+        </div>
+        <div>
+            <strong>할인율</strong>
+            <!--<p>50%</p>-->
+            <p>로그인후 확인가능</p>
+        </div>
+    </div>
+    <div class="seller">
+        <span>판매자 닉네임</span>
+        <p>수량 100,000</p>
+    </div>
+    <div class="pd_detail">
+        <div class="pd_header">
+            <span>Detail</span>
+            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5.38037 5.35L9.76074 1" stroke="#626262" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="pd_img">
+            <img src="../../images/product_detail.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- 로그인 후 login 클래스 추가 -->
+<div class="btn">
+    <button type="button" class="btn_chat">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75147 1C3.1273 1 1 3.1273 1 5.75147V9.55264C1 12.1768 3.1273 14.3041 5.75147 14.3041H11.9286L11.9284 18.1055C13.0754 17.167 15.0598 15.4048 16.4988 13.768C18.26 11.7646 19.0556 11.3851 19.0556 9.55264V5.75147C19.0556 3.1273 16.9283 1 14.3041 1H5.75147Z" stroke="#fff" stroke-linejoin="round"/>
+            <circle cx="5.75156" cy="7.65208" r="0.950293" fill="#fff"/>
+            <circle cx="9.55283" cy="7.65208" r="0.950293" fill="#fff"/>
+            <circle cx="13.3541" cy="7.65208" r="0.950293" fill="#fff"/>
+        </svg>
+        <span>Chat</span>
+    </button>
+</div>
+
+<!-- 마이페이지 > 상품관리 진입시 -->
+<!--<div class="btn">-->
+<!--    <button type="button" class="btn_r md_open_btn" aria-haspopup="dialog" title="대화상자" data-href="#quantity">-->
+<!--        판매중지-->
+<!--    </button>-->
+<!--</div>-->
+
+<!--<div class="btn">-->
+<!--    <button type="button" class="btn_b md_open_btn" aria-haspopup="dialog" title="대화상자" data-href="#saleC">-->
+<!--        판매재개-->
+<!--    </button>-->
+<!--</div>-->
+
+
+<!-- 모달창 -->
+<div class="md_cnt md_two" id="Report" role="dialog" aria-modal="true">
+    <div class="btn_wrap">
+        <button type="button">신고하기</button>
+        <button type="button" class="md_close_btn" data-link="last">취소</button>
+    </div>
+</div>
+
+<!-- 모달창: 마이페이지 > 상품관리 진입시 -->
+<div class="md_cnt md_two" id="quantity" role="dialog" aria-modal="true">
+    <div class="btn_wrap">
+        <button type="button">수량 변경</button>
+        <button type="button" class="md_close_btn" data-link="last">취소</button>
+    </div>
+</div>
+
+<div class="md_cnt md_check" id="saleC" role="dialog" aria-modal="true" aria-labelledby="mdTit2">
+    <h3 id="mdTit2">판매재개 수량확인</h3>
+    <p>판매재개 상품의 재고수량을<br>변경해주새요</p>
+    <div class="btn_wrap">
+        <button type="button" class="md_close_btn" data-link="last">Check</button>
+    </div>
+</div>
+
+
+
+</body>
+</html>

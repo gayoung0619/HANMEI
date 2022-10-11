@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <title>한미면세 - chat</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/chat.css">
+
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <button type="button" class="goback">
+                <svg width="18" height="18" viewBox ="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H1" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 17L1 9L9 1" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h2>BOX
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0L0 3.85V9.9C0 10.1917 0.140476 10.4715 0.390524 10.6778C0.640573 10.8841 0.979711 11 1.33333 11H4V7H8V11H10.6667C11.0203 11 11.3594 10.8841 11.6095 10.6778C11.8595 10.4715 12 10.1917 12 9.9V3.85L6 0Z" fill="#004B45"/>
+                </svg>
+            </h2>
+            <div class="header_right">
+                <button type="button" class="alarm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 9C18 7.4087 17.3679 5.88258 16.2426 4.75736C15.1174 3.63214 13.5913 3 12 3C10.4087 3 8.88258 3.63214 7.75736 4.75736C6.63214 5.88258 6 7.4087 6 9C6 16 3 18 3 18H21C21 18 18 16 18 9Z" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.7295 20C13.5537 20.3031 13.3014 20.5547 12.9978 20.7295C12.6941 20.9044 12.3499 20.9965 11.9995 20.9965C11.6492 20.9965 11.3049 20.9044 11.0013 20.7295C10.6977 20.5547 10.4453 20.3031 10.2695 20" stroke="#626262" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- 읽지 않은 알람이 있으면 -->
+                    <div class="alarm_circle"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="chat_wrap">
+        <!-- 상품 상세페이지에서 채팅으로 진입시, 아래 .pd_info 추가 -->
+        <div class="pd_info">
+            <div class="pd_img">
+                <img src="../../images/product_detail.jpg">
+            </div>
+            <div class="pd_txt">
+                <b>Brand-name</b>
+                <h3>item-name</h3>
+                <div class="price">
+                    <span class="percent">50%</span>
+                    <strong>&#8361;150,000</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="date">
+            <p>2022.00.00</p>
+        </div>
+
+        <div class="chatting_wrap" id="chattingWrap">
+            <!-- other_wrap: 상대방의 프로필 사진, message: 상대방의 메세지 -->
+            <div class="other_wrap">
+                <div class="pic_other">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#F9F9F9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.8824 19L18 25.3412V35.3059C18 35.7864 18.2314 36.2472 18.6432 36.587C19.0551 36.9268 19.6136 37.1176 20.1961 37.1176H24.5882V30.5294H31.1765V37.1176H35.5686C36.1511 37.1176 36.7096 36.9268 37.1215 36.587C37.5333 36.2472 37.7647 35.7864 37.7647 35.3059V25.3412L27.8824 19Z" fill="#004B45"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="message">
+                <p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+            <div class="message">
+                <p>안녕하세요안녕하세요안녕하세요안녕요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+            <div class="message">
+                <p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+
+            <div class="message_my">
+                <p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+            <div class="message_my">
+                <p>안녕하세요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+            <div class="message_my">
+                <p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+                <span class="time">오전 00:00</span>
+            </div>
+
+            <div class="message_my">
+                <p>이것 좀 봐봐</p>
+                <span class="time">오전 00:00</span>
+            </div>
+
+            <div class="other_wrap">
+                <div class="pic_other">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#F9F9F9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.8824 19L18 25.3412V35.3059C18 35.7864 18.2314 36.2472 18.6432 36.587C19.0551 36.9268 19.6136 37.1176 20.1961 37.1176H24.5882V30.5294H31.1765V37.1176H35.5686C36.1511 37.1176 36.7096 36.9268 37.1215 36.587C37.5333 36.2472 37.7647 35.7864 37.7647 35.3059V25.3412L27.8824 19Z" fill="#004B45"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="message">
+                <p>뭔데</p>
+                <span class="time">오전 00:00</span>
+            </div>
+
+            <div class="message_my">
+                <img src="../../images/sample2.jpg" alt="">
+                <span class="time">오전 00:00</span>
+            </div>
+
+            <div class="other_wrap">
+                <div class="pic_other">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#F9F9F9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.8824 19L18 25.3412V35.3059C18 35.7864 18.2314 36.2472 18.6432 36.587C19.0551 36.9268 19.6136 37.1176 20.1961 37.1176H24.5882V30.5294H31.1765V37.1176H35.5686C36.1511 37.1176 36.7096 36.9268 37.1215 36.587C37.5333 36.2472 37.7647 35.7864 37.7647 35.3059V25.3412L27.8824 19Z" fill="#004B45"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="message">
+                <img src="../../images/sample3.jpg" alt="">
+                <span class="time">오전 00:00</span>
+            </div>
+            <div class="message">
+                <img src="../../images/sample4.jpg" alt="">
+                <span class="time">오전 00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reply_wrap">
+        <button type="button" class="btn_pic">
+            <label for="file" class="upload-name">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6667 1H2.33333C1.59695 1 1 1.59695 1 2.33333V11.6667C1 12.403 1.59695 13 2.33333 13H11.6667C12.403 13 13 12.403 13 11.6667V2.33333C13 1.59695 12.403 1 11.6667 1Z" stroke="#959595" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.66602 5.6665C5.2183 5.6665 5.66602 5.21879 5.66602 4.6665C5.66602 4.11422 5.2183 3.6665 4.66602 3.6665C4.11373 3.6665 3.66602 4.11422 3.66602 4.6665C3.66602 5.21879 4.11373 5.6665 4.66602 5.6665Z" stroke="#959595" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.0007 8.99984L9.66732 5.6665L2.33398 12.9998" stroke="#959595" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+            <input type="file" id="file" name="file" class="blind">
+        </button>
+        <textarea placeholder="Write a message." class="textarea_size" onkeyup="adjustHeight();"></textarea>
+        <button type="button" class="send">
+            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6.64444L0 0L2.17778 5.48889L9.33333 6.64444L2.17778 7.51111L0 13L14 6.64444Z" fill="#C4C4C4"/>
+            </svg>
+        </button>
+    </div>
+
+</body>
+</html>
